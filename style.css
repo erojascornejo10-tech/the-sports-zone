@@ -1,12 +1,13 @@
 body{
-    background-color:rgb(224, 206, 209);
-    margin: auto;
+    background-color:rgb(156, 153, 193);
+    margin: 0;
     padding: 0;
     font-family:'Courier New', Courier, monospace;
 }
 
 header{
-    background-color:rgb(purple);
+    background-color:rgb(224, 206, 209);
+    height: 100px;
 }
 
 h1{
@@ -17,21 +18,20 @@ h1{
     text-shadow: 5 px 5 px 5xp white;
 }
 
+ul{
+    padding: 0;
+    margin: 0;
+}
+
 nav li{
     display: inline-block;
     margin-top: 30px;
     margin-right: 20px;
 }
 
-ul{
-    padding: 0;
-    margin: 0;
-
-}
-
 nav li a{
     color: darkgreen;
-    text-decoration: double;
+    text-decoration: none;
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
@@ -39,24 +39,31 @@ nav li a{
 
 main{
     width: 960px;
-    margin: 60px auto;
+    margin: 30px auto;
     min-height: 700px;
 }
 
 #hero{
     width: 960px;
     height: 600px;
-    border: 10px solid black;
+    border: 3px solid black;
 }
 
-#hero{
+#hero:hover{
     border-radius: 0px;
-    border: ;
+    border: 3px solid red
 }
 
 main p{
     font-size: 20px;
     margin-top: 30px;
+}
+
+.lower{
+    display: inline-block;
+    max-width: 30%;
+    margin: 10px;
+    text-align: center;
 }
 
 footer{
@@ -67,5 +74,5 @@ footer{
 
 footer p{
     padding-top: 50px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Helvetica, sans-serif;
 }

@@ -7,6 +7,7 @@
     <body>
         <header>
             <h1>The Boxing Zone</h1>
+            <script src="app.js"></script>
             <p style="color:rgb(155, 103, 25);">est. 2025</p>
         <nav>
             <ul>
@@ -18,6 +19,16 @@
         </header>
 
         <main>
+            <script>
+            let userAge =prompt(' How old are you?');
+                if(userAge --- 30){
+                    document.write('that\'s a good age');
+                } else if (userAge <90){
+                    document.write('you got rizz!');
+                } else {
+                    document.write('woahh!');
+                }
+            </script>
             <section>
                  <img 
                     alt="Boxing zone shop store front picture" 
@@ -49,7 +60,22 @@
                     style="width: 250px; height:auto;">
                 <p>Boxing Attire</p>
             </section>
+            <script>
+            let time = Number(prompt('What hour is it? (0-23)'));
+            let message;
 
+                if(time >= 0 && time <= 11){
+                    message = 'Good Morning!';
+                } else if(time <= 12){
+                    message = 'Good Afternoon!';
+                } else if(time < 24){
+                    message = 'Good Evening!';
+                } else {
+                    message = 'That hour does not exist!';
+                }
+
+                alert(message);
+            </script>
             <p>
             "The fight is won or lost far away from witnesses, behind the lines in the gym, and out there on the road, long before I dance under the lights.”
                 -Muhammad Ali

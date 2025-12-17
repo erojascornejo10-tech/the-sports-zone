@@ -41,6 +41,18 @@ main{
     width: 960px;
     margin: 30px auto;
     min-height: 700px;
+    text-align: center;
+}
+
+.main-section{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    }
+
+.main-section section{
+    flex: 1;
+    text-align: center;
 }
 
 section{

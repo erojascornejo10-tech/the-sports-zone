@@ -18,10 +18,12 @@
         </nav>
         </header>
 
+
+        
         <main>
             <script>
-            let userAge =prompt(' How old are you?');
-                if(userAge --- 30){
+            let userAge =Number(prompt(' How old are you?'));
+                if(userAge <= 30){
                     document.write('that\'s a good age');
                 } else if (userAge <90){
                     document.write('you got rizz!');
@@ -36,30 +38,34 @@
                     style="width: 750px; height: auto;">
                  <p>Fulfilling all of your boxing equipment needs</p>
             </section>
-            
+            <main class="main-section">
             <section>
                 <img 
-                    src="https://wbcboxing.com/wp-content/uploads/2023/boxing-gloves-1.jpg" 
-                    alt="equipment 1"
-                    style="width: 250px; height:auto;">
-                <p>Boxing gloves</p>
+                src="https://wbcboxing.com/wp-content/uploads/2023/boxing-gloves-1.jpg" 
+                alt="equipment 1"
+                style="width: 250px; height:auto;">
+                <h2>Boxing Gloves</h2>
+                <p>Different Brands</p>
             </section>
 
             <section>
                 <img 
-                    src="https://ak1.ostkcdn.com/images/products/is/images/direct/043f647e63dc9cd288a8b702076e516ba7802255/Soozier-Wall-Mount-Reflex-Boxing-Trainer%2C-360%C2%B0-Rotating-Rapid-Boxing-Bar-with-Punching-Ball%2C-Height-Adjustable-for-Home-Gym.jpg?impolicy=medium" 
-                    alt="equipment 2"
-                    style="width: 250px; height:auto;">
-                <p>Boxing Equipment</p>
+                src="https://ak1.ostkcdn.com/images/products/is/images/direct/043f647e63dc9cd288a8b702076e516ba7802255/Soozier-Wall-Mount-Reflex-Boxing-Trainer%2C-360%C2%B0-Rotating-Rapid-Boxing-Bar-with-Punching-Ball%2C-Height-Adjustable-for-Home-Gym.jpg?impolicy=medium" 
+                alt="equipment 2"
+                style="width: 250px; height:auto;">
+                <h2>Boxing Equipment</h2>
+                <p>Training Gear</p>
             </section>
 
             <section>
                 <img 
-                    src="https://www.kanongwear.com/image/cache/data/0.093-256610/KNCUSET-105-Black-White-600x450.jpg" 
-                    alt="equipment 3"
-                    style="width: 250px; height:auto;">
-                <p>Boxing Attire</p>
+                src="https://www.kanongwear.com/image/cache/data/0.093-256610/KNCUSET-105-Black-White-600x450.jpg" 
+                alt="equipment 3"
+                style="width: 250px; height:auto;">
+                <h2>Boxing Apparel</h2>
+                <p>Trunks and Robes</p>
             </section>
+        </main>
             <script>
             let time = Number(prompt('What hour is it? (0-23)'));
             let message;
@@ -74,14 +80,15 @@
                     message = 'That hour does not exist!';
                 }
 
+                alert(message);
+
                 document.write('Have a great day!');
             </script>
             <p>
             "The fight is won or lost far away from witnesses, behind the lines in the gym, and out there on the road, long before I dance under the lights.”
                 -Muhammad Ali
             </p>    
-        </main>
-
+        
         <footer>
             <p>&copy; 2025 The Boxing Zone</p>
         </footer>

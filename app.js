@@ -5,13 +5,6 @@ alert('Welcome to my page');
 let userName = prompt('What is your name?');
 console.log(userName);
 
-let answer = confirm("Are you sure you want to continue to this page?");
-
-if (answer) {
-  console.log("Action confirmed");
-} else {
-  console.log("Action canceled");
-}
 
 //string concatenation
 document.write('Welcome' + userName + '!');
@@ -28,15 +21,16 @@ function userprompt(){
                 message = 'woahh!';
             }
 
-            return message;
+                return message;
             }
 
-'use strict';
 
-function yourName(){
-    let name = prompt('What is your name?');
+let answer = confirm("Are you sure you want to continue to this page?");
 
-    return name;
+if (answer) {
+  console.log("Action confirmed");
+} else {
+  console.log("Action canceled");
 }
 
 function timeOfDay(){
@@ -56,3 +50,19 @@ function timeOfDay(){
     }
     return message;// message ='Good afternoon!'
 }
+
+function getValidWeight() {
+    let weight = Number(prompt("Enter your weight:"));
+
+    if (weight <= 0 || isNaN(weight)) {
+        alert("That is not a valid weight. Please try again.");
+        return getValidWeight(); // ask again
+    } else {
+        return weight; // valid input
+    }
+}
+
+let userWeight = getValidWeight();
+console.log("Weight entered:", userWeight);
+
+document.write(("Weight entered:", userWeight) + 'Pounds' + '!');

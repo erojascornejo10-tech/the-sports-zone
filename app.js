@@ -85,7 +85,7 @@ function displayRating() {
     let output = '';
     let rating = prompt('scale 1-5, how many stars would you give my boxing website?');
     for(let i = 0; i < rating; i++){
-        output += "<img class='star' src='images/Star.jpg'>"
+        output += "<img class='star' src='Images/Star.jpg'>"
     }
 
     return document.write(output);

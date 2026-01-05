@@ -66,3 +66,27 @@ let userWeight = getValidWeight();
 console.log("Weight entered:", userWeight);
 
 document.write(("Weight entered:", userWeight) + 'Pounds' + '!');
+
+function guessANumber() {
+    let answer;
+
+    while (answer != 7){//!= sign means does not equal to
+        answer = prompt('Guess a number between 1-10');// I am directing users to put 1 possible answer between 1-10; answer = 5 as user input
+        if (answer != 7){//7 is our correct guess; if anser is any other number, it would be an incorrect gurss, 
+        // incorrect answers include, 1,2,3,4,5,6,8,9,10;
+            alert('Try again!');
+        } else {
+            alert('You are correct!');
+        }
+    }
+}
+
+function displayRating() {
+    let output = '';
+    let rating = prompt('scale 1-5, how many stars would you give my boxing website?');
+    for(let i = 0; i < rating; i++){
+        output += "<img class='star' src='images/Star.jpg'>"
+    }
+
+    return document.write(output);
+}
